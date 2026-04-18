@@ -1,7 +1,7 @@
 # UK Ship Register Analysis
 
 Exploratory data analysis of the UK Ship Register using publicly available
-UK government data, with a focus on long‑term structural trends and vessel
+UK government data, focusing on long‑term structural trends and vessel
 registration dynamics.
 
 ---
@@ -9,30 +9,43 @@ registration dynamics.
 ## Project Overview
 
 This project analyses the UK Ship Register to understand how the number of
-UK‑registered merchant vessels has changed over time. Using annual and monthly
-datasets, the analysis explores long‑term trends alongside short‑term inflow
-and outflow dynamics to identify potential structural shifts in the register.
+UK‑registered merchant vessels has changed over time. Using both annual and
+monthly datasets, the analysis integrates long‑term trends with short‑term
+inflow and outflow dynamics to identify potential structural shifts in the
+register.
 
 The project is designed as a real‑world data analysis exercise, working with
-messy public‑sector datasets and focusing on reproducible, interpretable
-results rather than black‑box modelling.
+messy public‑sector datasets and prioritising reproducible, interpretable
+results over black‑box modelling.
 
 ---
 
-## Key Finding
+## Key Findings
 
-The annual data show a sustained decline in the number of UK‑registered merchant
-vessels from the late 2010s onwards, suggesting a structural change rather than
-short‑term volatility.
+### Long‑Term Trend (Annual Data)
+
+The annual statistics show a sustained decline in the number of UK‑registered
+merchant vessels from the late 2010s onwards, suggesting a structural change
+rather than short‑term volatility.
 
 ![UK Ship Register – Annual Trend](images/annual-trend-mca.png)
+
+### Underlying Dynamics (Monthly Data)
+
+onthly inflow and outflow analysis reveals repeated periods of net vessel
+outflow, where more vessels leave the UK Ship Register than enter. Although
+monthly movements are volatile, their cumulative effect provides a clear
+mechanism behind the long‑term decline observed in the annual data.
+
+![UK Ship Register – Annual Bar Chart](images/barchart.png)
+
 
 ---
 
 ## Data Sources
 
-- UK Ship Register Annual Statistics (FLE0100a)
-- UK Ship Register Monthly Inflow and Outflow Data (FLE0100b) 
+- **UK Ship Register Annual Statistics (FLE0100a)**
+- **UK Ship Register Monthly Inflow and Outflow Data (FLE0100b)**
 
 Source: UK Government / Maritime and Coastguard Agency  
 Licence: Open Government Licence
@@ -47,7 +60,8 @@ Licence: Open Government Licence
 - Exploratory data analysis of:
   - Annual long‑term trends
   - Monthly inflow and outflow dynamics
-- Visualisation to support interpretation and communication of insights
+- Time‑series visualisation to support interpretation and communication
+  of insights
 
 ---
 
@@ -62,7 +76,9 @@ Licence: Open Government Licence
 
 ## Data Availability
 
-Raw input data files are not stored in this repository.  
+Raw input data files are not stored in this repository.
+
 To reproduce the analysis, please download the datasets from the UK Government
 Ship Register and place them in the following directory:
 
+[images]: images/.png
